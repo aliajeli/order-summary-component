@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Click Here](https://github.com/aliajeli/order-summary-component)
-- Live Site URL: [Click Here](https://your-live-site-url.com)
+- Live Site URL: [Click Here](https://aliajeli.github.io/order-summary-componen)
 
 ## My process
 
