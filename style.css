@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: repeat-x;
+  display: grid;
+  place-items: center;
+}
+@media screen and (max-width: 375px) {
+  body {
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: repeat-x;
+  }
+}
+main {
+  position: relative;
+  width: 325px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: grid;
+  box-shadow: 0 5px 30px hsl(224, 23%, 55%, 30%);
+}
+.header-img {
+  width: 100%;
+}
+.content {
+  display: grid;
+  padding: 20px;
+  background-color: hsl(225, 100%, 98%);
+  place-items: center;
+  gap: 20px;
+}
+.title {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+.description {
+  padding: 10px;
+  color: hsl(224, 23%, 55%);
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+.plan-box {
+  place-self: stretch;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  align-items: center;
+}
+.plan-logo {
+}
+.plan-description {
+  padding-left: 20px;
+}
+.plan-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(223, 47%, 23%);
+}
+.plan-price {
+  font-size: 16px;
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+}
+.plan-change {
+  font-size: 14px;
+  font-weight: 700;
+  color: hsl(245, 75%, 52%);
+}
+.plan-change:hover {
+  color: hsl(245, 75%, 52%, 60%);
+  text-decoration: none;
+}
+.btn-submit {
+  place-self: stretch;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+  cursor: pointer;
+}
+.btn-submit:hover {
+  background-color: hsl(245, 75%, 52%, 70%);
+}
+.btn-cancel {
+  border: none;
+  background-color: inherit;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn-cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+.attribution {
+  position: absolute;
+  bottom: 10px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
